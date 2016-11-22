@@ -30,8 +30,6 @@
 		839CD3B01DE49E79001C937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839CD3B31DE49E79001C937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839CD3B51DE49E79001C937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		839CD3BE1DE49E79001C937A /* ASPLoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPLoginDemoTests.m; sourceTree = "<group>"; };
-		839CD3C01DE49E79001C937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839CD3CA1DE49EC8001C937A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
 		839CD3CB1DE49EC8001C937A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		839CD3CC1DE49EC8001C937A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			children = (
 				839CD3D61DE4A0ED001C937A /* README.md */,
 				839CD3A31DE49E78001C937A /* ASPLoginDemo */,
-				839CD3BD1DE49E79001C937A /* ASPLoginDemoTests */,
 				839CD3A21DE49E78001C937A /* Products */,
 				839CD3D31DE49EDA001C937A /* Frameworks */,
 			);
@@ -96,15 +93,6 @@
 				839CD3A51DE49E78001C937A /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		839CD3BD1DE49E79001C937A /* ASPLoginDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				839CD3BE1DE49E79001C937A /* ASPLoginDemoTests.m */,
-				839CD3C01DE49E79001C937A /* Info.plist */,
-			);
-			path = ASPLoginDemoTests;
 			sourceTree = "<group>";
 		};
 		839CD3C91DE49EC8001C937A /* TFHpple */ = {
