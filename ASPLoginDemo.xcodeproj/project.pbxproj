@@ -13,22 +13,11 @@
 		839CD3AF1DE49E78001C937A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839CD3AD1DE49E78001C937A /* Main.storyboard */; };
 		839CD3B11DE49E79001C937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839CD3B01DE49E79001C937A /* Assets.xcassets */; };
 		839CD3B41DE49E79001C937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839CD3B21DE49E79001C937A /* LaunchScreen.storyboard */; };
-		839CD3BF1DE49E79001C937A /* ASPLoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3BE1DE49E79001C937A /* ASPLoginDemoTests.m */; };
 		839CD3D01DE49EC8001C937A /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3CB1DE49EC8001C937A /* TFHpple.m */; };
 		839CD3D11DE49EC8001C937A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3CD1DE49EC8001C937A /* TFHppleElement.m */; };
 		839CD3D21DE49EC8001C937A /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3CF1DE49EC8001C937A /* XPathQuery.m */; };
 		839CD3D51DE49EDA001C937A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CD3D41DE49EDA001C937A /* libxml2.tbd */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		839CD3BB1DE49E79001C937A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 839CD3991DE49E78001C937A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 839CD3A01DE49E78001C937A;
-			remoteInfo = ASPLoginDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		839CD3A11DE49E78001C937A /* ASPLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASPLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +30,6 @@
 		839CD3B01DE49E79001C937A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		839CD3B31DE49E79001C937A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		839CD3B51DE49E79001C937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		839CD3BA1DE49E79001C937A /* ASPLoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASPLoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839CD3BE1DE49E79001C937A /* ASPLoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPLoginDemoTests.m; sourceTree = "<group>"; };
 		839CD3C01DE49E79001C937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839CD3CA1DE49EC8001C937A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
@@ -63,13 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		839CD3B71DE49E79001C937A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				839CD3A11DE49E78001C937A /* ASPLoginDemo.app */,
-				839CD3BA1DE49E79001C937A /* ASPLoginDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,24 +148,6 @@
 			productReference = 839CD3A11DE49E78001C937A /* ASPLoginDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		839CD3B91DE49E79001C937A /* ASPLoginDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 839CD3C61DE49E79001C937A /* Build configuration list for PBXNativeTarget "ASPLoginDemoTests" */;
-			buildPhases = (
-				839CD3B61DE49E79001C937A /* Sources */,
-				839CD3B71DE49E79001C937A /* Frameworks */,
-				839CD3B81DE49E79001C937A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				839CD3BC1DE49E79001C937A /* PBXTargetDependency */,
-			);
-			name = ASPLoginDemoTests;
-			productName = ASPLoginDemoTests;
-			productReference = 839CD3BA1DE49E79001C937A /* ASPLoginDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,12 +161,6 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = UZAPXQTVQ4;
 						ProvisioningStyle = Automatic;
-					};
-					839CD3B91DE49E79001C937A = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = UZAPXQTVQ4;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 839CD3A01DE49E78001C937A;
 					};
 				};
 			};
@@ -222,7 +178,6 @@
 			projectRoot = "";
 			targets = (
 				839CD3A01DE49E78001C937A /* ASPLoginDemo */,
-				839CD3B91DE49E79001C937A /* ASPLoginDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,13 +190,6 @@
 				839CD3B41DE49E79001C937A /* LaunchScreen.storyboard in Resources */,
 				839CD3B11DE49E79001C937A /* Assets.xcassets in Resources */,
 				839CD3AF1DE49E78001C937A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		839CD3B81DE49E79001C937A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,23 +209,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		839CD3B61DE49E79001C937A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				839CD3BF1DE49E79001C937A /* ASPLoginDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		839CD3BC1DE49E79001C937A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 839CD3A01DE49E78001C937A /* ASPLoginDemo */;
-			targetProxy = 839CD3BB1DE49E79001C937A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		839CD3AD1DE49E78001C937A /* Main.storyboard */ = {
@@ -415,32 +347,6 @@
 			};
 			name = Release;
 		};
-		839CD3C71DE49E79001C937A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UZAPXQTVQ4;
-				INFOPLIST_FILE = ASPLoginDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ASPLoginDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASPLoginDemo.app/ASPLoginDemo";
-			};
-			name = Debug;
-		};
-		839CD3C81DE49E79001C937A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UZAPXQTVQ4;
-				INFOPLIST_FILE = ASPLoginDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ASPLoginDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASPLoginDemo.app/ASPLoginDemo";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,14 +364,6 @@
 			buildConfigurations = (
 				839CD3C41DE49E79001C937A /* Debug */,
 				839CD3C51DE49E79001C937A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		839CD3C61DE49E79001C937A /* Build configuration list for PBXNativeTarget "ASPLoginDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				839CD3C71DE49E79001C937A /* Debug */,
-				839CD3C81DE49E79001C937A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
