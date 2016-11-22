@@ -14,6 +14,10 @@
 		839CD3B11DE49E79001C937A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 839CD3B01DE49E79001C937A /* Assets.xcassets */; };
 		839CD3B41DE49E79001C937A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839CD3B21DE49E79001C937A /* LaunchScreen.storyboard */; };
 		839CD3BF1DE49E79001C937A /* ASPLoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3BE1DE49E79001C937A /* ASPLoginDemoTests.m */; };
+		839CD3D01DE49EC8001C937A /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3CB1DE49EC8001C937A /* TFHpple.m */; };
+		839CD3D11DE49EC8001C937A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3CD1DE49EC8001C937A /* TFHppleElement.m */; };
+		839CD3D21DE49EC8001C937A /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 839CD3CF1DE49EC8001C937A /* XPathQuery.m */; };
+		839CD3D51DE49EDA001C937A /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CD3D41DE49EDA001C937A /* libxml2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		839CD3BA1DE49E79001C937A /* ASPLoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASPLoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839CD3BE1DE49E79001C937A /* ASPLoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPLoginDemoTests.m; sourceTree = "<group>"; };
 		839CD3C01DE49E79001C937A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839CD3CA1DE49EC8001C937A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		839CD3CB1DE49EC8001C937A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		839CD3CC1DE49EC8001C937A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		839CD3CD1DE49EC8001C937A /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		839CD3CE1DE49EC8001C937A /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		839CD3CF1DE49EC8001C937A /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		839CD3D41DE49EDA001C937A /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		839CD3D61DE4A0ED001C937A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839CD3D51DE49EDA001C937A /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +76,11 @@
 		839CD3981DE49E78001C937A = {
 			isa = PBXGroup;
 			children = (
+				839CD3D61DE4A0ED001C937A /* README.md */,
 				839CD3A31DE49E78001C937A /* ASPLoginDemo */,
 				839CD3BD1DE49E79001C937A /* ASPLoginDemoTests */,
 				839CD3A21DE49E78001C937A /* Products */,
+				839CD3D31DE49EDA001C937A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +100,7 @@
 				839CD3A81DE49E78001C937A /* AppDelegate.m */,
 				839CD3AA1DE49E78001C937A /* ViewController.h */,
 				839CD3AB1DE49E78001C937A /* ViewController.m */,
+				839CD3C91DE49EC8001C937A /* TFHpple */,
 				839CD3AD1DE49E78001C937A /* Main.storyboard */,
 				839CD3B01DE49E79001C937A /* Assets.xcassets */,
 				839CD3B21DE49E79001C937A /* LaunchScreen.storyboard */,
@@ -109,6 +125,27 @@
 				839CD3C01DE49E79001C937A /* Info.plist */,
 			);
 			path = ASPLoginDemoTests;
+			sourceTree = "<group>";
+		};
+		839CD3C91DE49EC8001C937A /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				839CD3CA1DE49EC8001C937A /* TFHpple.h */,
+				839CD3CB1DE49EC8001C937A /* TFHpple.m */,
+				839CD3CC1DE49EC8001C937A /* TFHppleElement.h */,
+				839CD3CD1DE49EC8001C937A /* TFHppleElement.m */,
+				839CD3CE1DE49EC8001C937A /* XPathQuery.h */,
+				839CD3CF1DE49EC8001C937A /* XPathQuery.m */,
+			);
+			path = TFHpple;
+			sourceTree = "<group>";
+		};
+		839CD3D31DE49EDA001C937A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				839CD3D41DE49EDA001C937A /* libxml2.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +255,9 @@
 				839CD3AC1DE49E78001C937A /* ViewController.m in Sources */,
 				839CD3A91DE49E78001C937A /* AppDelegate.m in Sources */,
 				839CD3A61DE49E78001C937A /* main.m in Sources */,
+				839CD3D01DE49EC8001C937A /* TFHpple.m in Sources */,
+				839CD3D21DE49EC8001C937A /* XPathQuery.m in Sources */,
+				839CD3D11DE49EC8001C937A /* TFHppleElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = ASPLoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ASPLoginDemo;
@@ -366,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = ASPLoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ASPLoginDemo;
