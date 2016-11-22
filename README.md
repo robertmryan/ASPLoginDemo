@@ -2,7 +2,7 @@
 
 This is emonstration of programmatically logging in to ASP.NET web site. This consists of three steps
 
-1. Retrieve the login page with GET request, parse the HTML for the contents of the hidden fields. I'd suggest using TFHpple.
+1. Retrieve the login page with GET request, parse the HTML for the contents of the hidden fields. HTML parsing can be done with [TFHpple](https://github.com/topfunky/hpple).
 
 2. Then combine these fields with the userid and password fields, and then submit a POST request.
 
@@ -10,7 +10,7 @@ This is emonstration of programmatically logging in to ASP.NET web site. This co
 
 This is not intended as an end-user library, but just a "simple" example of how one might create custom callouts. This is for illustrative purposes only.
 
-See http://stackoverflow.com/a/30824051/1271826.
+See http://stackoverflow.com/questions/40728386.
 
 Developed in Objective-C on Xcode 8.1 for iOS 10. 
 
