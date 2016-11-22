@@ -20,12 +20,14 @@
     NSString *password = @"XXX";
     
     [self retrieveLoginFieldsFromURL:url completionHandler:^(NSDictionary *parameters) {
-        [self loginWithURL:url user:userid password:password parameters:parameters completionHandler:^(BOOL success) {
+        [self loginWithURL:url user:userid password:password parameters:parameters completionHandler:^(BOOL success, NSData *data) {
             if (success) {
                 NSLog(@"success");
             } else {
                 NSLog(@"failure");
             }
+            
+            NSLog(@"Resulting HTML: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
         }];
     }];
 }
@@ -51,7 +53,7 @@
     [task resume];
 }
 
-- (void)loginWithURL:(NSURL *)url user:(NSString *)user password:(NSString *)password parameters:(NSDictionary *)parameters completionHandler:(void (^)(BOOL))completionHandler {
+- (void)loginWithURL:(NSURL *)url user:(NSString *)user password:(NSString *)password parameters:(NSDictionary *)parameters completionHandler:(void (^)(BOOL, NSData *))completionHandler {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPMethod:@"POST"];
@@ -66,6 +68,7 @@
     NSURLSessionTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (data == nil || error != nil) {
             NSLog(@"%@", error);
+            completionHandler(false, data);
             return;
         }
         
@@ -77,12 +80,11 @@
         
         if (!success) {
             NSLog(@"response: %@", response);
-            NSLog(@"responseString: %@", [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
         }
         
         // let's call completion handler
         
-        completionHandler(success);
+        completionHandler(success, data);
     }];
     [task resume];
 }
